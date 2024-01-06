@@ -59,18 +59,14 @@
   --bs-body-bg: #fff;
 }
 
-*,
-*::before,
-*::after {
+*,*::before,*::after {
   box-sizing: border-box;
 }
-
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
   }
 }
-
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -83,7 +79,6 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -160,41 +155,28 @@ abbr[data-bs-original-title] {
   -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
 }
-
 address {
   margin-bottom: 1rem;
   font-style: normal;
   line-height: inherit;
 }
-
-ol,
-ul {
+ol,ul {
   padding-left: 2rem;
 }
-
-ol,
-ul,
-dl {
+ol,ul,dl {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-
-ol ol,
-ul ul,
-ol ul,
-ul ol {
+ol ol,ul ul,ol ul,ul ol {
   margin-bottom: 0;
 }
-
 dt {
   font-weight: 700;
 }
-
 dd {
   margin-bottom: 0.5rem;
   margin-left: 0;
 }
-
 blockquote {
   margin: 0 0 1rem;
 }
@@ -242,13 +224,10 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   text-decoration: none;
 }
 
-pre,
-code,
-kbd,
-samp {
+pre,code,kbd,samp {
   font-family: var(--bs-font-monospace);
   font-size: 1em;
-  direction: ltr /* rtl:ignore */;
+  direction: ltr ;
   unicode-bidi: bidi-override;
 }
 
