@@ -23,7 +23,6 @@
     if (obj === null || obj === undefined) {
       return `${obj}`;
     }
-
     return {}.toString.call(obj).match(/\s([a-z]+)/i)[1].toLowerCase();
   };
   /**
